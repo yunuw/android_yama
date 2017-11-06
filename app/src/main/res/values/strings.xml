@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Yama</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_label">Select</string>
+    <string name="hint_enter_contact">Select a contact</string>
+    <string name="hint_type_message">Type a message</string>
+    <string name="intent_view">View</string>
+    <string name="intent_reply">Reply</string>
+    <string name="intent_auto_reply">Auto replay</string>
+    <string name="default_reply_message">Hi, thanks for your message. I will respond ASAP.</string>
+    <string name="turned_on">On</string>
+    <string name="turned_off">Off</string>
+    <string name="summary_reply_text">Enter the text for auto-reply</string>
+
+</resources>

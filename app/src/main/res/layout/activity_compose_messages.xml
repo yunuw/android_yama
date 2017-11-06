@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uw.yw239.yama.ComposeMessages">
+
+    <LinearLayout
+        android:id = "@+id/select_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="top">
+
+        <EditText
+            android:id="@+id/txt_contact"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_enter_contact"
+            android:textAppearance="@style/CodeFont"
+            android:inputType="number"
+            android:layout_gravity="bottom"
+            />
+
+        <Button
+            android:id="@+id/btn_select"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_label"
+            android:textColor="@color/colorPrimaryDark"
+            android:drawableLeft="@mipmap/ic_select"
+            android:contentDescription="@string/button_label"
+            android:background="@color/background_white"
+            android:padding="2dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/enter_message"
+        android:layout_gravity="bottom"
+        >
+
+        <EditText
+            android:id="@+id/entered_content"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:hint="@string/hint_type_message"
+            android:textAppearance="@style/CodeFont"/>
+
+        <ImageButton
+            android:id="@+id/btn_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_send"
+            android:background="@color/background_white"
+            />
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/image_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_person"
+        android:layout_gravity="bottom"/>
+
+    <TextView
+        android:id="@+id/txt_message_author"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image_person"
+        android:text="test"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/message_info_text_style"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="3dp"/>
+
+    <ImageView
+        android:id="@+id/image_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_text"
+        android:layout_gravity="bottom"
+        android:layout_toRightOf="@id/txt_message_author"/>
+
+    <TextView
+        android:id="@+id/txt_message_body"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:layout_gravity="bottom"
+        android:layout_toRightOf="@id/image_text"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/message_info_text_style"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="3dp"/>
+
+    <ImageView
+        android:id="@+id/image_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_time"
+        android:layout_gravity="bottom"
+        android:layout_toRightOf="@id/txt_message_body"/>
+
+    <TextView
+        android:id="@+id/txt_message_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:layout_gravity="bottom"
+        android:layout_toRightOf="@id/image_time"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="@style/message_info_text_style"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="3dp"/>
+
+</RelativeLayout>
